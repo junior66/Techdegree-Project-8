@@ -1,5 +1,6 @@
 body {
     position: relative;
+    margin: 5% 20%;
 }
 
 .overlay {
@@ -36,8 +37,16 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.card {
+    border: 1px solid lightgrey;
+    margin: 5%;
 }
 
 img {
     border-radius: 50%;
+    width: 20%;
 }
+
