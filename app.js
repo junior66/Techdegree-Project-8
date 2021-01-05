@@ -41,5 +41,5 @@ fetch(urlAPI)
                 </div>
             </div>
         `
-        gridContainer.innerHTML = employeeHTML 
+        gridContainer.innerHTML = employeeHTML; 
     });
