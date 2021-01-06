@@ -17,7 +17,7 @@ fetch(urlAPI)
 
     function displayEmployees(employeeData) {
         employees = employeeData;
-    }
+    
 
     // store the employee HTML as we create it
     let employeeHTML = '';
@@ -26,7 +26,7 @@ fetch(urlAPI)
     employees.forEach((employee, index) => {
         let name = employee.name;
         let email = employee.email;
-        let city = employees.location.city;
+        let city = employee.location.city;
         let picture = employee.picture;
 
         // template literals make this so much cleaner!
@@ -41,9 +41,9 @@ fetch(urlAPI)
                 </div>
             </div>
         `
+    })
         gridContainer.innerHTML = employeeHTML; 
-    });
-
+    }
    function displayModal(index) {
     //    use object destructuring to make our template literal cleaner
     let { name, dob, phone, email, location: { city, street, state, postcode }, picture } = employees[index];
