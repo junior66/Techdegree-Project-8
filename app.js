@@ -62,7 +62,7 @@ fetch(urlAPI)
             </p>
         </div>
     `;
-        overlay.classList.remove("hidden");
+        overlay.classList.remove(".hidden");
         modalContainer.innerHTML = modalHTML;
 
    }
@@ -77,4 +77,8 @@ fetch(urlAPI)
         displayModal(index);
     }
 
+});
+
+modalClose.addEventListener(click, () => {
+    overlay.classList.add('.hidden');
 });
