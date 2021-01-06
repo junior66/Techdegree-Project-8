@@ -67,7 +67,7 @@ fetch(urlAPI)
 
    }
 
-   gridContainer.addEventListener(click, e => {
+   gridContainer.addEventListener('click', e => {
     //    make sure the click is not on the gridContainer itself
     if(e.target !== gridContainer) {
         // select the card element based on its proximity to actual element clicked
@@ -79,6 +79,6 @@ fetch(urlAPI)
 
 });
 
-modalClose.addEventListener(click, () => {
+modalClose.addEventListener('click', () => {
     overlay.classList.add('.hidden');
 });
