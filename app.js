@@ -44,6 +44,7 @@ fetch(urlAPI)
     })
         gridContainer.innerHTML = employeeHTML; 
     }
+    
    function displayModal(index) {
     //    use object destructuring to make our template literal cleaner
     let { name, dob, phone, email, location: { city, street, state, postcode }, picture } = employees[index];
@@ -71,7 +72,7 @@ fetch(urlAPI)
     //    make sure the click is not on the gridContainer itself
     if(e.target !== gridContainer) {
         // select the card element based on its proximity to actual element clicked
-        const card = e.target.closest('.card');
+        const card = e.target.closest(".card");
         const index = card.getAttribute('data-index');
         
         displayModal(index);
