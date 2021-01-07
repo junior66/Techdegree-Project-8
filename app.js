@@ -73,7 +73,7 @@ fetch(urlAPI)
     if(e.target !== gridContainer) {
         // select the card element based on its proximity to actual element clicked
         const card = e.target.closest(".card");
-        const index = card.getAttribute('data-index');
+        const index = card.getAttribute("data-index");
         
         displayModal(index);
     }
