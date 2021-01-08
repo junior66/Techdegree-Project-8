@@ -57,6 +57,10 @@ h1 {
     justify-content: center;
 }
 
+.card:hover {
+    background: lightblue;
+}
+
 img {
     border-radius: 50%;
     height: 75%;
