@@ -19,15 +19,15 @@ fetch(urlAPI)
         employees = employeeData;
     
 
-    // store the employee HTML as we create it
-    let employeeHTML = '';
+        // store the employee HTML as we create it
+        let employeeHTML = '';
 
-    // loop through each employee and create HTML markup
-    employees.forEach((employee, index) => {
-        let name = employee.name;
-        let email = employee.email;
-        let city = employee.location.city;
-        let picture = employee.picture;
+        // loop through each employee and create HTML markup
+        employees.forEach((employee, index) => {
+            let name = employee.name;
+            let email = employee.email;
+            let city = employee.location.city;
+            let picture = employee.picture;
 
         // template literals make this so much cleaner!
 
@@ -54,10 +54,10 @@ fetch(urlAPI)
         <div class="text-container">
             <h2 class="name">${name.first} ${name.last}</h2>
             <p class="email">${email}</p>
-            <p class="address">${city}</p>
+            <p class="city">${city}</p>
             </hr>
             <p>${phone}</p>
-            <p class="address">${street}, ${state} ${postcode}</p>
+            <p class="address">${street.number} ${street.name} ${state} ${postcode}</p>
             <p>Birthday:
             ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}
             </p>
