@@ -1,12 +1,11 @@
 body {
     position: relative;
-    margin: 5% 20%;
 }
 
 h1 {
     text-transform: uppercase;
     font-size: medium;
-    margin: 20px 0;
+    margin: 20px 200px;
 }
 
 .overlay {
@@ -44,6 +43,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    padding: 20px 200px;
     
     
 }
@@ -74,4 +74,6 @@ img {
 .email, .address {
     color: rgba(100, 100, 100, 0.4)
 }
+
+
 
